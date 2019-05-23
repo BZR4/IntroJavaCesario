@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,8 +21,24 @@ public class SanBox {
                 celoto, dias, mendes,emerson,paulo,carlao
         );
 
+        List<Contato> meusContatos = new ArrayList<>();
+        meusContatos.add(celoto);
+        meusContatos.add(dias);
+        meusContatos.add(mendes);
+        meusContatos.add(emerson);
+        meusContatos.add(paulo);
+        meusContatos.add(carlao);
+        meusContatos.add(new Contato("Erland","Silva",
+                "88866-9999", "erland@gmail.com","Alberto Feres"));
+        meusContatos.remove(paulo);
+        meusContatos.remove(emerson);
+
+        for (Contato c:contatos) {
+            System.out.println(c.getNome());
+        }
+
         contatos.forEach(c -> System.out.println(c.getNome()));
-        
+
         /*
         float soma = Matematica.somar(200, 567);
         float diferenca = Matematica.subtrair(897, 323);
