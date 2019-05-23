@@ -1,6 +1,28 @@
+import java.util.Arrays;
+import java.util.List;
+
 public class SanBox {
     public static void main(String[] args) {
 
+        Contato celoto = new Contato("Fernado","Celoto","99999-7777",
+                "celoto@gmail.com","Alberto Feres");
+        Contato dias = new Contato("Thiago","Dias","99999-7777",
+                "celoto@gmail.com","Alberto Feres");
+        Contato mendes = new Contato("Thiago","Mendes","99999-6666",
+                "dias@gmail.com","Alberto Feres");
+        Contato emerson = new Contato("Emerson","Gaino","99999-5555",
+                "emerson@gmail.com","Alberto Feres");
+        Contato paulo = new Contato("Paulo","Cavalli","99999-4444",
+                "paulo@gmail.com","Alberto Feres");
+        Contato carlao = new  Contato("Carlao","Fenandes","77777-8888","carlao@gmail.com","Designer");
+
+        List<Contato> contatos = Arrays.asList(
+                celoto, dias, mendes,emerson,paulo,carlao
+        );
+
+        contatos.forEach(c -> System.out.println(c.getNome()));
+        
+        /*
         float soma = Matematica.somar(200, 567);
         float diferenca = Matematica.subtrair(897, 323);
         float produto = Matematica.multiplicar(67, 23);
@@ -11,7 +33,7 @@ public class SanBox {
         System.out.println(produto);
         System.out.println(quociente);
 
-        /*
+
         Contato c1 = new Contato("Thiago Mendes",
                 "99988-5566","tgm@gmail.com");
 

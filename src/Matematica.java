@@ -1,6 +1,5 @@
 public class Matematica {
 
-
     public static float somar(float x, float y){
         return x + y;
     }

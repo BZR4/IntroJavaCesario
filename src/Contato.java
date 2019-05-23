@@ -13,6 +13,14 @@ public class Contato {
         this.email = email;
     }
 
+    public Contato(String nome, String sobrenome, String telefone, String email, String empresa) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.telefone = telefone;
+        this.email = email;
+        Empresa = empresa;
+    }
+
     public String getNome() {
         return nome;
     }
