@@ -1,5 +1,17 @@
 public class SanBox {
     public static void main(String[] args) {
+
+        float soma = Matematica.somar(200, 567);
+        float diferenca = Matematica.subtrair(897, 323);
+        float produto = Matematica.multiplicar(67, 23);
+        float quociente = Matematica.dividir(890, 5);
+
+        System.out.println(soma);
+        System.out.println(diferenca);
+        System.out.println(produto);
+        System.out.println(quociente);
+
+        /*
         Contato c1 = new Contato("Thiago Mendes",
                 "99988-5566","tgm@gmail.com");
 
@@ -15,5 +27,7 @@ public class SanBox {
 
         System.out.println(c1.exibirNomeCompleto());
         System.out.println(c1.exibirNomeCompletoPrimeiroSobrenome());
+
+         */
     }
 }
